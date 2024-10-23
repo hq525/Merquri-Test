@@ -1,0 +1,192 @@
+.weather-container {
+    padding: 20px;
+    box-sizing: border-box;
+    .weather-searchbar {
+        display: flex;
+        justify-content: center;
+    }
+    .weather-search-history {
+        padding: 10px;
+    }
+    .main-weather-search-bar {
+        margin-right: 10px;
+        border-radius: 15px;
+        div.MuiInputBase-root {
+            border-radius: 15px;
+        }
+        & fieldset {
+            border: 0;
+            box-shadow: 0px 0px 1px gray;
+        }
+    }
+    .main-weather-search-bar-dark {
+        background-color: #372b6a;
+        & label {
+            color: white;
+        }
+        & input {
+            color: white;
+        }
+    }
+    .main-weather-search-bar-light {
+        background-color: #b69fe6;
+    }
+    .main-weather-search-btn {
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+    .main-weather-search-btn-dark {
+        background-color: #28124d;
+    }
+    .main-weather-search-btn-light {
+        background-color: #6c40b4;
+    }
+    .weather-display {
+        border-radius: 5px;
+        padding: 25px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+        border-radius: 20px;
+        margin-top: 100px;
+        position: relative;
+        #sun-img {
+            position: absolute;
+            transform: scale(0.25);
+            transform-origin: top left;
+            translate: 18px -80px;
+        }
+        #weather-text {
+            text-align: left;
+        }
+        .weather-temperature {
+            text-align: left;
+            font-size: 64px;
+            font-weight: bold;
+        }
+        .weather-temperature-dark {
+            color: white;
+        }
+        .weather-temperature-light {
+            color: #6c40b4;
+        }
+        #weather-high-low-temperature {
+            text-align: left;
+            font-size: small;
+        }
+        .weather-additional-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: small;
+            & :first-child {
+                font-weight: bold;
+            }
+        }
+        .weather-additional-info-dark {
+            color: white;
+        }
+        .weather-additional-info-light {
+            & span {
+                color: #847c92;
+            }
+        }
+    }
+    .weather-additional-info-mobile-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .weather-additional-info-mobile-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        span {
+            margin-top: 5px;
+        }
+    }
+    .weather-additional-info-mobile-right-dark {
+        color: white;
+    }
+    .weather-additional-info-mobile-right-light {
+        color: #847c92;
+    }
+    .weather-display-dark {
+        background-color: #372b6a;
+        color: white;
+    }
+    .weather-display-light {
+        background-color: #b69fe6;
+        border: 0.1px solid white;
+    }
+    .weather-search-history {
+        border-radius: 15px;
+        margin-top: 20px;
+        padding: 30px 20px;
+    }
+    .weather-search-history-dark {
+        background-color: #3b2d6c;
+    }
+    .weather-search-history-light {
+        background-color: #c7b6eb;
+    }
+    #search-history-title {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .search-history-card-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: small;
+        border-radius: 15px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .search-history-card-container-dark {
+        background-color: #2b2543;
+    }
+    .search-history-card-container-light {
+        background-color: #e5daf4;
+    }
+    .search-history-action-btn {
+        transform: scale(0.7)
+    }
+    .search-history-city-country-mobile {
+        text-align: left;
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+    .search-history-date-time-mobile {
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .weather-container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        .main-weather-search-bar {
+            margin-right: 20px;
+            min-width: 200px;
+        }
+        #weather-error-message {
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+    }
+    .weather-display {
+        padding: 30px 40px;
+        #sun-img {
+            position: absolute;
+            transform: scale(0.4);
+            transform-origin: top left;
+            translate: 8px -120px;
+        }
+    }
+}
